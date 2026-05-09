@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta class="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Minecraft Clone v2</title>
+        <link rel="stylesheet" href="styles.css?v=3" />
+    </head>
+    <body>
+        <canvas id="c"></canvas>
+        <div id="crosshair">
+            <img src="textures/crosshair.png" class="crosshair" />
+        </div>
+
+        <div id="hud">
+            <div class="hotbar">
+                <input type="radio" class="voxel" id="0" /><label
+                    for="0"
+                    style="background-position: -0% -0%"
+                ></label
+                ><input type="radio" class="voxel" id="1" /><label
+                    for="1"
+                    style="background-position: -100% -0%"
+                ></label
+                ><input type="radio" class="voxel" id="2" /><label
+                    for="2"
+                    style="background-position: -200% -0%"
+                ></label
+                ><input type="radio" class="voxel" id="3" /><label
+                    for="3"
+                    style="background-position: -300% -0%"
+                ></label
+                ><input type="radio" class="voxel" id="4" /><label
+                    for="4"
+                    style="background-position: -400% -0%"
+                ></label
+                ><input type="radio" class="voxel" id="5" /><label
+                    for="5"
+                    style="background-position: -500% -0%"
+                ></label
+                ><input type="radio" class="voxel" id="6" /><label
+                    for="6"
+                    style="background-position: -600% -0%"
+                ></label
+                ><input type="radio" class="voxel" id="7" /><label
+                    for="7"
+                    style="background-position: -700% -0%"
+                ></label
+                ><input type="radio" class="voxel" id="8" /><label
+                    for="8"
+                    style="background-position: -800% -0%"
+                ></label
+                ><input type="radio" class="voxel" id="9" /><label
+                    for="9"
+                    style="background-position: -900% -0%"
+                ></label
+                ><input type="radio" class="voxel" id="10" /><label
+                    for="10"
+                    style="background-position: -1000% -0%"
+                ></label
+                ><input type="radio" class="voxel" id="11" /><label
+                    for="11"
+                    style="background-position: -1100% -0%"
+                ></label>
+            </div>
+        </div>
+
+        <script src="three/build/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/kchapelier/poisson-disk-sampling@2.2.2/build/poisson-disk-sampling.min.js"></script>
+        <script src="src/perlin.js?v=3"></script>
+        <script type="module" src="src/main.js?v=3"></script>
+    </body>
+</html>

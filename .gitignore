@@ -1,0 +1,17 @@
+.DS_Store
+*.log
+node_modules/
+dist/
+.env
+.gemini/
+.system_generated/
+walkthrough.md
+task.md
+implementation_plan.md
+minecraft_jumping*
+checking_console_errors*
+check_three_version*
+check_port_8001*
+verify_physics_8001*
+check_debug_logs_8001*
+verify_hotbar_dom*
