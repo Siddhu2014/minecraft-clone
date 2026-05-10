@@ -11,9 +11,7 @@ A Minecraft-like voxel engine in the browser created using JavaScript and Three.
 ## New Features
 - **Player Physics:** Added gravity and jumping mechanics.
 - **Synthesized Audio:** Retro 8-bit sound effects for walking, jumping, breaking, and placing blocks using the Web Audio API.
-- **Expanded Hotbar:** 12 selectable block types including stone bricks, cobblestone, glass, and bookshelves.
-- **Day/Night Cycle:** (Optional/WIP) Smooth transitions between day and night lighting.
-
+- **Expanded Hotbar:** 8 selectable block types including stone bricks, cobblestone, glass, and bookshelves.
 ## Controls
 - **Move forward/backward** with W S
 - **Strafe left/right** with A D

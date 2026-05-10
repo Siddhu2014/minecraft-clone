@@ -134,21 +134,30 @@ export class PlayerControls extends PointerLockControls {
 
         const currPosition = camera.position.clone();
 
+        const isCrouching = keys.includes(17); // Ctrl
+        const isSprinting = keys.includes(16) && !isCrouching && keys.includes(87); // Shift
+        
+        let speedMult = 1.0;
+        if (isCrouching) speedMult = 0.5;
+        else if (isSprinting) speedMult = 1.6;
+
+        const currentSpeed = CameraConstants.MOVEMENT_SPEED * speedMult;
+
         // w
         if (keys.includes(87)) {
-            this.moveForward(CameraConstants.MOVEMENT_SPEED);
+            this.moveForward(currentSpeed);
         }
         // a
         if (keys.includes(65)) {
-            this.moveRight(-1 * CameraConstants.MOVEMENT_SPEED);
+            this.moveRight(-1 * currentSpeed);
         }
         // s
         if (keys.includes(83)) {
-            this.moveForward(-1 * CameraConstants.MOVEMENT_SPEED);
+            this.moveForward(-1 * currentSpeed);
         }
         // d
         if (keys.includes(68)) {
-            this.moveRight(CameraConstants.MOVEMENT_SPEED);
+            this.moveRight(currentSpeed);
         }
 
         // space
